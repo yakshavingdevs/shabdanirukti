@@ -17,7 +17,8 @@ function sn_init() {
     create_database_table("sn_persons","(
             person_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
             person_email VARCHAR(200) NOT NULL,
-            person_name VARCHAR(200)
+            person_name VARCHAR(200),
+            approval_status VARCHAR(12)
      )");
      
     //create words table if not exists
